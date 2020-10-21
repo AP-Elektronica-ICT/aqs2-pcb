@@ -1119,6 +1119,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="S1" library="switch-omron" library_urn="urn:adsk.eagle:library:377" deviceset="10-XX" device="" package3d_urn="urn:adsk.eagle:package:27496/1"/>
 <part name="C10" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="1.0UF" device="-0805-25V-10%" package3d_urn="urn:adsk.eagle:package:37429/1" value="0.1uF"/>
 <part name="GND1" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
+<part name="GND2" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="C1" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="1.0UF" device="-0805-25V-10%" package3d_urn="urn:adsk.eagle:package:37429/1" value="1uF"/>
+<part name="GND3" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="C2" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="1.0UF" device="-0805-25V-10%" package3d_urn="urn:adsk.eagle:package:37429/1" value="10uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -1161,6 +1165,20 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="GND1" gate="1" x="129.54" y="48.26" smashed="yes">
 <attribute name="VALUE" x="129.54" y="48.006" size="1.778" layer="96" align="top-center"/>
 </instance>
+<instance part="GND2" gate="1" x="144.78" y="76.2" smashed="yes">
+<attribute name="VALUE" x="142.24" y="73.66" size="1.778" layer="96"/>
+</instance>
+<instance part="C1" gate="G$1" x="144.78" y="83.82" smashed="yes">
+<attribute name="NAME" x="146.304" y="86.741" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="146.304" y="81.661" size="1.778" layer="96" font="vector"/>
+</instance>
+<instance part="GND3" gate="1" x="152.4" y="76.2" smashed="yes">
+<attribute name="VALUE" x="149.86" y="73.66" size="1.778" layer="96"/>
+</instance>
+<instance part="C2" gate="G$1" x="152.4" y="83.82" smashed="yes">
+<attribute name="NAME" x="153.924" y="86.741" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="153.924" y="81.661" size="1.778" layer="96" font="vector"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -1202,6 +1220,16 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="129.54" y1="50.8" x2="129.54" y2="53.34" width="0.1524" layer="91"/>
 <junction x="129.54" y="53.34"/>
 </segment>
+<segment>
+<pinref part="GND2" gate="1" pin="GND"/>
+<wire x1="144.78" y1="78.74" x2="144.78" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="C1" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<pinref part="GND3" gate="1" pin="GND"/>
+<wire x1="152.4" y1="78.74" x2="152.4" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="C2" gate="G$1" pin="2"/>
+</segment>
 </net>
 <net name="3.3V" class="0">
 <segment>
@@ -1226,6 +1254,14 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <junction x="121.92" y="91.44"/>
 <wire x1="137.16" y1="91.44" x2="137.16" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="C10" gate="G$1" pin="1"/>
+<wire x1="144.78" y1="91.44" x2="144.78" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="C1" gate="G$1" pin="1"/>
+<wire x1="137.16" y1="91.44" x2="144.78" y2="91.44" width="0.1524" layer="91"/>
+<junction x="137.16" y="91.44"/>
+<wire x1="152.4" y1="91.44" x2="152.4" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="C2" gate="G$1" pin="1"/>
+<wire x1="144.78" y1="91.44" x2="152.4" y2="91.44" width="0.1524" layer="91"/>
+<junction x="144.78" y="91.44"/>
 </segment>
 </net>
 <net name="N$18" class="0">

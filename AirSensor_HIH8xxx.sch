@@ -329,8 +329,8 @@ W = angled&lt;p&gt;
 </class>
 </classes>
 <parts>
-<part name="HIH1" library="con-lstb" library_urn="urn:adsk.eagle:library:162" deviceset="MA04-1" device="" package3d_urn="urn:adsk.eagle:package:8337/1" value="Temp and humid sensor"/>
-<part name="U3" library="HIH8120-021-001" deviceset="HIH8120-021-001" device=""/>
+<part name="HIH1" library="con-lstb" library_urn="urn:adsk.eagle:library:162" deviceset="MA04-1" device="" package3d_urn="urn:adsk.eagle:package:8337/1" value="T and H sensor"/>
+<part name="U3" library="HIH8120-021-001" deviceset="HIH8120-021-001" device="" value="HIH8120"/>
 </parts>
 <sheets>
 <sheet>
