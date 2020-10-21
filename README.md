@@ -1,1 +1,1 @@
-aqs2-pcb
+![schema_airsensor](./Schema_airsensor.PNG)
