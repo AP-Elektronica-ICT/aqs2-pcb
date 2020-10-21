@@ -2,7 +2,7 @@
 ![schema airsensor](./Schema_airsensor.PNG)
 
 # Schema LoRaWAN
-![schema LoraWAN](./Schema_LoRa.PNG)
+![schema LoRa](./Schema_LoRA.PNG)
 
 # Schema HIH8xxx
 ![Schema HIH8xxx](./Schema_HIH8xxx.PNG)
