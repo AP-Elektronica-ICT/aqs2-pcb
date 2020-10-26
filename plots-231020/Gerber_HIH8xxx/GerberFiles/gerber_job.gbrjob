@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2020-10-26T09:44:16Z",
+        "GenerationSoftware": {
+            "Application": "EAGLE",
+            "Vendor": "Autodesk",
+            "Version": "9.6.2"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 1.57,
+        "LayerNumber": 2,
+        "Name": {
+            "ProjectId": "AirSensor_HIH8xxx"
+        },
+        "Owner": "vitalv vitalv <vitalv@skynet.be>",
+        "Size": {
+            "X": 17.196,
+            "Y": 17.008
+        }
+    }
+}

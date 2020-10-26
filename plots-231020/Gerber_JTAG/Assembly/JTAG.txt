@@ -1,0 +1,5 @@
+Partlist exported from C:/Users/Vital Volckaerts/Documents/school/3EA/IOT/IOT 2020/aqs2-pcb/JTAG.sch at 26/10/2020 10:47
+
+Qty Value Device    Package Parts    Description   MF MPN OC_FARNELL OC_NEWARK POPULARITY
+2         FE10-2    FE10-2  SV3, SV4 FEMALE HEADER        unknown    unknown   0         
+1         PINHD-2X4 2X04    JP1      PIN HEADER                                          
