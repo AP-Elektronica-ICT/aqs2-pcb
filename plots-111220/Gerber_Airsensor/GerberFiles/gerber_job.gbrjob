@@ -1,7 +1,7 @@
 {
     "Header": {
         "Comment": "All values are metric (mm)",
-        "CreationDate": "2020-10-26T09:46:32Z",
+        "CreationDate": "2020-12-11T13:16:28Z",
         "GenerationSoftware": {
             "Application": "EAGLE",
             "Vendor": "Autodesk",
@@ -13,12 +13,12 @@
         "BoardThickness": 1.57,
         "LayerNumber": 2,
         "Name": {
-            "ProjectId": "AirSensor_LoRA"
+            "ProjectId": "AirSensor"
         },
         "Owner": "vitalv vitalv <vitalv@skynet.be>",
         "Size": {
-            "X": 37.77,
-            "Y": 29.7334
+            "X": 108.636,
+            "Y": 80
         }
     }
 }
