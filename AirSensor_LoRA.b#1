@@ -143,7 +143,7 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <board>
-<fusionsync huburn="a.YnVzaW5lc3M6c2t5bmV0MTMz" projecturn="a.YnVzaW5lc3M6c2t5bmV0MTMzI0QyMDE5MTAzMTIzMzQxNDY3Ng" f3durn="urn:adsk.wipprod:dm.lineage:gBG1N-XqQO-DzMLJpc-8hg" pcbguid="" lastpulledtime="" lastsyncedchangeguid="" latestrevisionid="c9c4a9db-c59c-4e5b-af83-e9ca314a6cc9" lastsyncedrevisionid="c9c4a9db-c59c-4e5b-af83-e9ca314a6cc9" lastboardhashguid="1a8cda24-f025-4226-e9cc-3dac7828f5c5" lastpushedtime="2020-10-21T16:33:23Z" linktopcb3d="true"/>
+<fusionsync huburn="a.YnVzaW5lc3M6c2t5bmV0MTMz" projecturn="a.YnVzaW5lc3M6c2t5bmV0MTMzI0QyMDE5MTAzMTIzMzQxNDY3Ng" f3durn="urn:adsk.wipprod:dm.lineage:gBG1N-XqQO-DzMLJpc-8hg" pcbguid="713ceda1-754c-4077-b978-a9e63d735a61" lastpulledtime="" lastsyncedchangeguid="" latestrevisionid="c9c4a9db-c59c-4e5b-af83-e9ca314a6cc9" lastsyncedrevisionid="c9c4a9db-c59c-4e5b-af83-e9ca314a6cc9" lastboardhashguid="1a8cda24-f025-4226-e9cc-3dac7828f5c5" lastpushedtime="2020-10-21T16:33:23Z" linktopcb3d="true"/>
 <plain>
 <wire x1="0" y1="52.2986" x2="37.77" y2="52.324" width="0" layer="20"/>
 <wire x1="37.77" y1="52.324" x2="37.77" y2="82.032" width="0" layer="20"/>
@@ -724,8 +724,11 @@ design rules under a new name.</description>
 </polygon>
 <contactref element="C1" pad="2"/>
 <contactref element="C2" pad="2"/>
-<contactref element="S1" pad="4"/>
+</signal>
+<signal name="3.3V">
 <contactref element="S1" pad="3"/>
+<contactref element="S1" pad="4"/>
+<wire x1="11.176" y1="54.3306" x2="17.6784" y2="54.3306" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$17">
 <contactref element="U2" pad="13"/>
