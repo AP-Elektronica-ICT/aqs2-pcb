@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="dots" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -5485,8 +5485,8 @@ Standard 3.3V and 5V 500mA LDO voltage regulator in SOT-23 layout. Micrel part M
 <part name="5V" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="" package3d_urn="urn:adsk.eagle:package:38039/1" value="5V"/>
 <part name="GND9" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND16" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="BT1" library="SparkFun-Batteries" library_urn="urn:adsk.eagle:library:508" deviceset="BATTERY" device="-18650" package3d_urn="urn:adsk.eagle:package:37227/1"/>
-<part name="BT2" library="SparkFun-Batteries" library_urn="urn:adsk.eagle:library:508" deviceset="BATTERY" device="-18650" package3d_urn="urn:adsk.eagle:package:37227/1"/>
+<part name="BT1" library="SparkFun-Batteries" library_urn="urn:adsk.eagle:library:508" deviceset="BATTERY" device="-18650" package3d_urn="urn:adsk.eagle:package:37227/1" value="3.7V"/>
+<part name="BT2" library="SparkFun-Batteries" library_urn="urn:adsk.eagle:library:508" deviceset="BATTERY" device="-18650" package3d_urn="urn:adsk.eagle:package:37227/1" value="3.7V"/>
 <part name="U1" library="ATSAMD21G18A-AU" deviceset="ATSAMD21G18A-AU" device=""/>
 <part name="GND1" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND6" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -5515,7 +5515,6 @@ Standard 3.3V and 5V 500mA LDO voltage regulator in SOT-23 layout. Micrel part M
 <part name="R2" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="0.3OHM" device="-0805-1/8W-1%" package3d_urn="urn:adsk.eagle:package:39651/1" value="2.2K"/>
 <part name="C11" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="1.0UF" device="-0805-25V-10%" package3d_urn="urn:adsk.eagle:package:37429/1" value="0.22uF"/>
 <part name="JTAG" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="PINHD-2X4" device="" package3d_urn="urn:adsk.eagle:package:6240893/1"/>
-<part name="GND18" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="U2" library="SparkFun-IC-Power" deviceset="V_REG_MIC5219" device="3.3V" package3d_urn="urn:adsk.eagle:package:39060/1" value="MIC5219 3.3V"/>
 <part name="GND12" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="R3" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="0.3OHM" device="-0805-1/8W-1%" package3d_urn="urn:adsk.eagle:package:39651/1" value="10k"/>
@@ -5524,6 +5523,7 @@ Standard 3.3V and 5V 500mA LDO voltage regulator in SOT-23 layout. Micrel part M
 <part name="HIH8XXX" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_04" device="" package3d_urn="urn:adsk.eagle:package:38085/1" value="Temp &amp; Hum"/>
 <part name="R4" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="0.3OHM" device="-0805-1/8W-1%" package3d_urn="urn:adsk.eagle:package:39651/1" value="100K"/>
 <part name="S1" library="EG1213" deviceset="EG1213" device=""/>
+<part name="GND8" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -5664,12 +5664,9 @@ Standard 3.3V and 5V 500mA LDO voltage regulator in SOT-23 layout. Micrel part M
 <attribute name="NAME" x="188.976" y="121.539" size="1.778" layer="95" font="vector" rot="R180"/>
 <attribute name="VALUE" x="190.119" y="125.984" size="1.778" layer="96" font="vector" rot="R90"/>
 </instance>
-<instance part="JTAG" gate="A" x="50.8" y="12.7" smashed="yes" rot="R90">
-<attribute name="NAME" x="42.545" y="6.35" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="58.42" y="6.35" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="GND18" gate="1" x="45.72" y="38.1" smashed="yes" rot="R180">
-<attribute name="VALUE" x="48.26" y="40.64" size="1.778" layer="96" rot="R180"/>
+<instance part="JTAG" gate="A" x="-10.16" y="71.12" smashed="yes" rot="R90">
+<attribute name="NAME" x="-18.415" y="64.77" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="-2.54" y="64.77" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="U2" gate="G$1" x="-78.74" y="73.66" smashed="yes">
 <attribute name="NAME" x="-86.36" y="81.534" size="1.778" layer="95" font="vector"/>
@@ -5700,6 +5697,9 @@ Standard 3.3V and 5V 500mA LDO voltage regulator in SOT-23 layout. Micrel part M
 <instance part="S1" gate="1" x="-106.68" y="132.08" smashed="yes" rot="R270">
 <attribute name="NAME" x="-108.585" y="140.335" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-104.14" y="137.795" size="1.778" layer="96"/>
+</instance>
+<instance part="GND8" gate="1" x="-7.62" y="48.26" smashed="yes">
+<attribute name="VALUE" x="-10.16" y="45.72" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -5825,15 +5825,15 @@ Standard 3.3V and 5V 500mA LDO voltage regulator in SOT-23 layout. Micrel part M
 <junction x="121.92" y="33.02"/>
 </segment>
 <segment>
-<pinref part="JTAG" gate="A" pin="2"/>
-<pinref part="GND18" gate="1" pin="GND"/>
-<wire x1="45.72" y1="17.78" x2="45.72" y2="35.56" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="GND17" gate="1" pin="GND"/>
 <wire x1="35.56" y1="139.7" x2="35.56" y2="142.24" width="0.1524" layer="91"/>
 <pinref part="RN2483" gate="G$1" pin="5"/>
 <wire x1="35.56" y1="142.24" x2="43.18" y2="142.24" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND8" gate="1" pin="GND"/>
+<pinref part="JTAG" gate="A" pin="7"/>
+<wire x1="-7.62" y1="50.8" x2="-7.62" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -5950,11 +5950,6 @@ Standard 3.3V and 5V 500mA LDO voltage regulator in SOT-23 layout. Micrel part M
 <label x="78.74" y="132.08" size="1.778" layer="95" align="bottom-right"/>
 </segment>
 <segment>
-<pinref part="JTAG" gate="A" pin="4"/>
-<wire x1="48.26" y1="17.78" x2="48.26" y2="33.02" width="0.1524" layer="91"/>
-<label x="48.26" y="25.4" size="1.778" layer="95" rot="R90" align="bottom-right"/>
-</segment>
-<segment>
 <pinref part="U2" gate="G$1" pin="OUT"/>
 <wire x1="-71.12" y1="78.74" x2="-58.42" y2="78.74" width="0.1524" layer="91"/>
 <label x="-63.5" y="78.74" size="1.778" layer="95" align="bottom-right"/>
@@ -5977,25 +5972,10 @@ Standard 3.3V and 5V 500mA LDO voltage regulator in SOT-23 layout. Micrel part M
 <wire x1="43.18" y1="147.32" x2="33.02" y2="147.32" width="0.1524" layer="91"/>
 <label x="35.56" y="147.32" size="1.778" layer="95"/>
 </segment>
-</net>
-<net name="N$15" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="PA30"/>
-<wire x1="30.48" y1="53.34" x2="35.56" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="53.34" x2="30.48" y2="-2.54" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="-2.54" x2="45.72" y2="-2.54" width="0.1524" layer="91"/>
-<pinref part="JTAG" gate="A" pin="1"/>
-<wire x1="45.72" y1="-2.54" x2="45.72" y2="10.16" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$16" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="PA31"/>
-<wire x1="35.56" y1="50.8" x2="33.02" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="33.02" y1="50.8" x2="33.02" y2="-5.08" width="0.1524" layer="91"/>
-<wire x1="33.02" y1="-5.08" x2="50.8" y2="-5.08" width="0.1524" layer="91"/>
 <pinref part="JTAG" gate="A" pin="5"/>
-<wire x1="50.8" y1="-5.08" x2="50.8" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="-10.16" y1="68.58" x2="-10.16" y2="58.42" width="0.1524" layer="91"/>
+<label x="-10.16" y="60.96" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="D+" class="0">
@@ -6113,14 +6093,14 @@ Standard 3.3V and 5V 500mA LDO voltage regulator in SOT-23 layout. Micrel part M
 <wire x1="139.7" y1="101.6" x2="139.7" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="PB10"/>
-<wire x1="71.12" y1="99.06" x2="81.28" y2="99.06" width="0.1524" layer="91"/>
-<label x="78.74" y="99.06" size="1.778" layer="95" align="bottom-right"/>
+<pinref part="RN2483_2" gate="G$1" pin="4"/>
+<wire x1="63.5" y1="149.86" x2="73.66" y2="149.86" width="0.1524" layer="91"/>
+<label x="71.12" y="149.86" size="1.778" layer="95" align="bottom-right"/>
 </segment>
 <segment>
-<pinref part="RN2483_2" gate="G$1" pin="3"/>
-<wire x1="63.5" y1="147.32" x2="73.66" y2="147.32" width="0.1524" layer="91"/>
-<label x="71.12" y="147.32" size="1.778" layer="95" align="bottom-right"/>
+<pinref part="U1" gate="G$1" pin="PA05"/>
+<wire x1="35.56" y1="111.76" x2="25.4" y2="111.76" width="0.1524" layer="91"/>
+<label x="27.94" y="111.76" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TXD" class="0">
@@ -6131,14 +6111,14 @@ Standard 3.3V and 5V 500mA LDO voltage regulator in SOT-23 layout. Micrel part M
 <wire x1="137.16" y1="101.6" x2="137.16" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="PB11"/>
-<wire x1="71.12" y1="96.52" x2="81.28" y2="96.52" width="0.1524" layer="91"/>
-<label x="78.74" y="96.52" size="1.778" layer="95" align="bottom-right"/>
-</segment>
-<segment>
 <pinref part="RN2483_2" gate="G$1" pin="2"/>
 <wire x1="63.5" y1="144.78" x2="73.66" y2="144.78" width="0.1524" layer="91"/>
 <label x="71.12" y="144.78" size="1.778" layer="95" align="bottom-right"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="PA04"/>
+<wire x1="35.56" y1="114.3" x2="25.4" y2="114.3" width="0.1524" layer="91"/>
+<label x="27.94" y="114.3" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SCL" class="0">
@@ -6181,11 +6161,6 @@ Standard 3.3V and 5V 500mA LDO voltage regulator in SOT-23 layout. Micrel part M
 </net>
 <net name="SAMD_RST" class="0">
 <segment>
-<pinref part="JTAG" gate="A" pin="6"/>
-<wire x1="50.8" y1="17.78" x2="50.8" y2="35.56" width="0.1524" layer="91"/>
-<label x="50.8" y="33.02" size="1.778" layer="95" rot="R90" align="bottom-right"/>
-</segment>
-<segment>
 <pinref part="R3" gate="G$1" pin="2"/>
 <label x="10.16" y="132.08" size="1.778" layer="95" align="bottom-right"/>
 <pinref part="U1" gate="G$1" pin="!RESETN"/>
@@ -6200,15 +6175,40 @@ Standard 3.3V and 5V 500mA LDO voltage regulator in SOT-23 layout. Micrel part M
 <wire x1="2.54" y1="134.62" x2="5.08" y2="134.62" width="0.1524" layer="91"/>
 <junction x="5.08" y="134.62"/>
 </segment>
+<segment>
+<pinref part="JTAG" gate="A" pin="3"/>
+<wire x1="-12.7" y1="68.58" x2="-12.7" y2="50.8" width="0.1524" layer="91"/>
+<label x="-12.7" y="53.34" size="1.778" layer="95" rot="R90"/>
+</segment>
+</net>
+<net name="SWDCLK" class="0">
+<segment>
+<pinref part="JTAG" gate="A" pin="8"/>
+<wire x1="-7.62" y1="76.2" x2="-7.62" y2="91.44" width="0.1524" layer="91"/>
+<label x="-7.62" y="88.9" size="1.778" layer="95" rot="R90" align="bottom-right"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="PA30"/>
+<wire x1="35.56" y1="53.34" x2="20.32" y2="53.34" width="0.1524" layer="91"/>
+<label x="22.86" y="53.34" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SWDIO" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="PA31"/>
+<wire x1="35.56" y1="50.8" x2="22.86" y2="50.8" width="0.1524" layer="91"/>
+<label x="25.4" y="50.8" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="JTAG" gate="A" pin="4"/>
+<wire x1="-12.7" y1="76.2" x2="-12.7" y2="88.9" width="0.1524" layer="91"/>
+<label x="-12.7" y="86.36" size="1.778" layer="95" rot="R90" align="bottom-right"/>
+</segment>
 </net>
 </nets>
 </sheet>
 </sheets>
 <errors>
-<approved hash="104,1,-129.54,116.84,BT1,-,N$8,,,"/>
-<approved hash="104,1,-129.54,127,BT1,+,N$11,,,"/>
-<approved hash="104,1,-129.54,104.14,BT2,-,GND,,,"/>
-<approved hash="104,1,-129.54,114.3,BT2,+,N$8,,,"/>
 <approved hash="104,1,71.12,127,U1,VDDIO2,3.3V,,,"/>
 <approved hash="104,1,71.12,63.5,U1,GNDANA,GND,,,"/>
 <approved hash="104,1,71.12,132.08,U1,VDDANA,3.3V,,,"/>
@@ -6218,12 +6218,7 @@ Standard 3.3V and 5V 500mA LDO voltage regulator in SOT-23 layout. Micrel part M
 <approved hash="104,1,71.12,129.54,U1,VDDIO1,3.3V,,,"/>
 <approved hash="104,1,71.12,124.46,U1,VDDIN,3.3V,,,"/>
 <approved hash="104,1,71.12,121.92,U1,VDDCORE,N$5,,,"/>
-<approved hash="108,1,5.08,147.32,GND,,,,,"/>
-<approved hash="113,1,-86.36,124.943,L7805,,,,,"/>
-<approved hash="113,1,-128.107,121.92,BT1,,,,,"/>
-<approved hash="113,1,-128.107,109.22,BT2,,,,,"/>
 <approved hash="113,1,7.32536,142.24,S2,,,,,"/>
-<approved hash="113,1,46.7004,17.7377,SV1,,,,,"/>
 </errors>
 </schematic>
 </drawing>
