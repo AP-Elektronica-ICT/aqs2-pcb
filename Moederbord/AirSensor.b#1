@@ -1663,14 +1663,21 @@ design rules under a new name.</description>
 <wire x1="80.9162" y1="39.7418" x2="81.03" y2="39.628" width="0.254" layer="1"/>
 <wire x1="78.3319125" y1="39.7418" x2="80.9162" y2="39.7418" width="0.254" layer="1"/>
 <contactref element="J3" pad="5"/>
+<wire x1="76.484" y1="4.1402" x2="76.484" y2="11.2568" width="0.254" layer="1"/>
+<wire x1="80.4672" y1="15.24" x2="88.9" y2="15.24" width="0.254" layer="1"/>
+<wire x1="76.484" y1="11.2568" x2="80.4672" y2="15.24" width="0.254" layer="1"/>
 <contactref element="J3" pad="8"/>
 <contactref element="J3" pad="6"/>
 <contactref element="J3" pad="9"/>
 <contactref element="J3" pad="7"/>
 <contactref element="J3" pad="11"/>
 <contactref element="J3" pad="10"/>
+<wire x1="76.484" y1="4.1402" x2="78.384" y2="3.9152" width="0" layer="19" extent="1-1"/>
+<wire x1="77.934" y1="1.6102" x2="78.384" y2="3.9152" width="0" layer="19" extent="1-1"/>
 <wire x1="76.384" y1="1.4652" x2="77.934" y2="1.6102" width="0" layer="19" extent="1-1"/>
-<wire x1="71.424" y1="1.7702" x2="71.984" y2="3.9152" width="0" layer="19" extent="1-1"/>
+<wire x1="73.984" y1="1.4652" x2="76.384" y2="1.4652" width="0" layer="19" extent="1-1"/>
+<wire x1="71.424" y1="1.7702" x2="73.984" y2="1.4652" width="0" layer="19" extent="1-1"/>
+<wire x1="71.984" y1="3.9152" x2="71.424" y2="1.7702" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$8">
 <contactref element="BT1" pad="GND@1"/>
@@ -1815,10 +1822,10 @@ design rules under a new name.</description>
 </signal>
 <signal name="D-">
 <contactref element="U1" pad="33"/>
-<wire x1="79.482" y1="35.678" x2="79.482" y2="22.1542" width="0.254" layer="1"/>
-<wire x1="79.482" y1="22.1542" x2="74.534" y2="17.2062" width="0.254" layer="1"/>
+<wire x1="79.482" y1="35.678" x2="79.482" y2="21.951" width="0.254" layer="1"/>
+<wire x1="79.482" y1="21.951" x2="74.534" y2="17.003" width="0.254" layer="1"/>
 <contactref element="J3" pad="2"/>
-<wire x1="74.534" y1="17.2062" x2="74.534" y2="4.1402" width="0.254" layer="1"/>
+<wire x1="74.534" y1="17.003" x2="74.534" y2="4.1402" width="0.254" layer="1"/>
 </signal>
 <signal name="RST">
 <contactref element="U1" pad="29"/>
@@ -2021,25 +2028,6 @@ design rules under a new name.</description>
 <mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
 <mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
 </mfgpreviewcolors>
-<errors>
-<approved hash="21,19,57d657565554d554"/>
-<approved hash="21,19,c28dc08f408f428d"/>
-<approved hash="21,19,1e451bb964471845"/>
-<approved hash="21,19,95ac97af17af15ac"/>
-<approved hash="21,19,f3f9f3f9f1fbf1fb"/>
-<approved hash="21,19,e660e462e662e460"/>
-<approved hash="21,19,f0b1f2b3f2b3f0b1"/>
-<approved hash="3,1,b7bac83fc83fb7ba"/>
-<approved hash="3,1,8ee2026702678ee2"/>
-<approved hash="4,1,3a3b4961fe028479"/>
-<approved hash="4,1,51ae5e0bcc2d3076"/>
-<approved hash="4,1,ea224e33246205e7"/>
-<approved hash="4,1,5de3a5460864e845"/>
-<approved hash="4,1,79bfa61ca43b5878"/>
-<approved hash="4,1,b6faa16ed83c8461"/>
-<approved hash="4,1,cffc47998e3d4e78"/>
-<approved hash="4,1,3d5351f9abdedff0"/>
-</errors>
 </board>
 </drawing>
 <compatibility>
