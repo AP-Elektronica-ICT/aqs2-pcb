@@ -2,7 +2,7 @@
 ![schema airsensor](./Moederbord/AirSensor_Schema.JPG)
 
 # Schema LoRaWAN
-![schema LoRa](./LoRa/LoRA_Schema.JPG)
+![schema LoRa](./LoRa/LoRa_Schema.JPG)
 
 # Schema HIH8xxx
 ![Schema HIH8xxx](./HIH8xxx/Schema_HIH8xxx.PNG)
